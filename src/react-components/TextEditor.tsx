@@ -17,7 +17,7 @@ const TextEditor = () => {
 
     // -- UseEffect for server connection to socket.io server ------------------------------
     useEffect(() => {
-      const s = io("http://localhost:8000");
+      const s = io("18.191.173.196:8000");
       setSocket(s);
     
       return () => {

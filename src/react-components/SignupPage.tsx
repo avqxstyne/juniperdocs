@@ -50,7 +50,7 @@ const SignupPage = () => {
 
                         if (emailInputBox.verify() == true) {
                             if (passwordInputBox.verify() == true) {
-                                fetch('http://localhost:8080/api/auth/signup', {
+                                fetch('18.191.173.196:8080/api/auth/signup', {
                                     method: "POST",
                                     headers: { 
                                         'Content-Type': 'application/json',

@@ -29,7 +29,7 @@ const Homepage = (props: Props) => {
     
 
     useEffect(() => {
-        const s = io("http://localhost:8000");
+        const s = io("18.191.173.196:8000");
         setSocket(s);
 
         return () => {
@@ -52,7 +52,7 @@ const Homepage = (props: Props) => {
                 
 
                 // IMPLEMENTING THE CLASS INHERITANCE REQUIREMENT IN APP FUNCTIONALITY
-                let href = `http://localhost:5173/documents/${data[i].id}`
+                let href = `18.191.173.196:3000/documents/${data[i].id}`
                 let text = `${data[i].name}`;
                 let lastOpened = data[i].lastOpened;
                 let date = new Date(lastOpened)
@@ -78,7 +78,7 @@ const Homepage = (props: Props) => {
             for (let i = 0; i < data.length; i++) {       
                 
                 // IMPLEMENTING THE CLASS INHERITANCE REQUIREMENT IN APP FUNCTIONALITY
-                let href = `http://localhost:5173/documents/${data[i].id}`
+                let href = `18.191.173.196:3000/documents/${data[i].id}`
                 let text = `${data[i].name}`
                 let lastOpened = data[i].lastOpened;
                 let date = new Date(lastOpened)

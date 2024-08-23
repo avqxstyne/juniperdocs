@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import mySvg from '../assets/juniperfv.svg'
 import { io } from 'socket.io-client';
 import '../styles/Homepage.scss'

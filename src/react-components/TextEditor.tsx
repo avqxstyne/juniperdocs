@@ -14,7 +14,6 @@ const TextEditor = () => {
     const {id: documentId} = useParams()
     const [socket, setSocket] = useState() as any;
     const [quill, setQuill] = useState() as any;
-    const [name, setName] = useState("Untitled Document");
 
     // -- UseEffect for server connection to socket.io server ------------------------------
     useEffect(() => {

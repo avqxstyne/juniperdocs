@@ -20,6 +20,11 @@ const Homepage = (props: Props) => {
 
     const [socket, setSocket] = useState() as any;
     const [value, setValue] = useState("");
+    const localDevelopmentURL = "http://localhost:8000";
+    const productionURL = 'http://18.191.173.196:8000';
+
+
+    // CHECK LOADS
 
     if (!localStorage.getItem("username")) {
         window.open('/login', '_self')
@@ -29,7 +34,7 @@ const Homepage = (props: Props) => {
     
 
     useEffect(() => {
-        const s = io("18.191.173.196:8000");
+        const s = io(productionURL);
         setSocket(s);
 
         return () => {

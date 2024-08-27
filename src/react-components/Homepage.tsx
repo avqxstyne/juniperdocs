@@ -20,7 +20,7 @@ const Homepage = (props: Props) => {
 
     const [socket, setSocket] = useState() as any;
     const [value, setValue] = useState("");
-    const localDevelopmentURL = "http://localhost:8000";
+    // const localDevelopmentURL = "http://localhost:8000";
     const productionURL = 'http://18.191.173.196:8000';
 
 

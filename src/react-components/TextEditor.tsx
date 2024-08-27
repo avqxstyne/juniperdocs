@@ -14,7 +14,7 @@ const TextEditor = () => {
     const {id: documentId} = useParams()
     const [socket, setSocket] = useState() as any;
     const [quill, setQuill] = useState() as any;
-    const localDevelopmentURL = "http://localhost:8000";
+    // const localDevelopmentURL = "http://localhost:8000";
     const productionURL = 'http://18.191.173.196:8000';
 
     // -- UseEffect for server connection to socket.io server ------------------------------

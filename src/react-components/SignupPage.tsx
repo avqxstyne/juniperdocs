@@ -11,7 +11,7 @@ const SignupPage = () => {
     const [email, setEmail] = useState("")
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
-    const localDevelopmentURL = "http://localhost:8080/api/auth/signup";
+    // const localDevelopmentURL = "http://localhost:8080/api/auth/signup";
     const productionURL = 'http://18.191.173.196:8080/api/auth/signup';
 
    

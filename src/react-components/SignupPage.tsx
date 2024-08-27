@@ -45,7 +45,7 @@ const SignupPage = () => {
                     <button
                     onClick={() => {
 
-                        let emailInputBox = new emailInput(email)
+                        let emailInputBox = new emailInput(email) 
                         let passwordInputBox = new passwordInput(password)
 
                         if (emailInputBox.verify() == true) {

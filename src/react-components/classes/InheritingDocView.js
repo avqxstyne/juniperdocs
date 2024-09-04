@@ -1,5 +1,3 @@
-import { Children } from "react";
-
 class Doc {
     // Create a document with name and a link to it
     constructor(link, name, id, lastOpened) {
@@ -74,6 +72,9 @@ export default class DocView extends Doc {
 
         const displayElements = document.getElementsByClassName("homepage-document-list-item")
         for (let i = 0; i < displayElements.length; i++) {
+
+            console.log(displayElements[i].children0[0].href)
+            console.log(this.link)
 
             if (displayElements[i].children[0].href == "http://ec2-18-191-173-196.us-east-2.compute.amazonaws.com:5173" + this.link) {
     

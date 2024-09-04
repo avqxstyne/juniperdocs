@@ -75,7 +75,7 @@ const LoginPage = () => {
                                         alert(data.message)
 
                                     } else if (data.new_window == "true") {
-                                        window.open('/homepage','_blank', );
+                                        window.open('/homepage','_self', );
                                         localStorage.setItem('username', data.username)
 
                                     }

@@ -1,5 +1,3 @@
-import { Children } from "react";
-
 class Doc {
     // Create a document with name and a link to it
     constructor(link, name, id, lastOpened) {

@@ -162,6 +162,11 @@ const TextEditor = () => {
                 // @ts-ignore
                 socket.emit("save-document", quill.getContents(), document.querySelector(".document-name").value, Date.now())
               }}>Save</button>
+              <button onClick={() => { 
+                // @ts-ignore
+                socket.emit("delete-document", quill.getContents(), document.querySelector(".document-name").value)
+                window.open('/homepage', '_self')
+              }}>Delete</button>
             </div>
 
           </div>
